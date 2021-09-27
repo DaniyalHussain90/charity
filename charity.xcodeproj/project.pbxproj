@@ -1,0 +1,1069 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		817297410BD6E99D2BC74625 /* Pods_charity_charityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B74759FA4F7E883568A7A /* Pods_charity_charityUITests.framework */; };
+		8A8F18BBDB349E361356E874 /* Pods_charityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE73F3C30363618ED7382B6 /* Pods_charityTests.framework */; };
+		8FEA36C3CCEC173ABD3E5887 /* Pods_charity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D5020AF0B569BD8E3387D0 /* Pods_charity.framework */; };
+		CC0B3B4426E7951500927738 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC0B3B4326E7951500927738 /* GoogleService-Info.plist */; };
+		CC1082C726F9E13C0090BB68 /* medicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1082C626F9E13C0090BB68 /* medicineVC.swift */; };
+		CC12EB0D26E76E2200A994C8 /* foodPlanTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */; };
+		CC12EB0E26E76E2200A994C8 /* foodPlanTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */; };
+		CC12EB1326E76FF100A994C8 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC15021526EA2CD2002BDDCB /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15021426EA2CD2002BDDCB /* Food.swift */; };
+		CC1567AC26F8B413001777C8 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1567AB26F8B413001777C8 /* Medicine.swift */; };
+		CC1567AE26F8B4EB001777C8 /* medicineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1567AD26F8B4EB001777C8 /* medicineManager.swift */; };
+		CC16302326FB496E00E98E70 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC16302226FB496E00E98E70 /* Auth.storyboard */; };
+		CC188E9726E8C0DB0035517B /* radioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC188E9626E8C0DB0035517B /* radioButton.swift */; };
+		CC188E9A26E8E0B70035517B /* paymentSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC188E9826E8E0B70035517B /* paymentSheetVC.swift */; };
+		CC188E9B26E8E0B70035517B /* paymentSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC188E9926E8E0B70035517B /* paymentSheetVC.xib */; };
+		CC1CB91426F4AA3500EDF909 /* priceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CB91226F4AA3500EDF909 /* priceItem.swift */; };
+		CC1CB91526F4AA3500EDF909 /* priceItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1CB91326F4AA3500EDF909 /* priceItem.xib */; };
+		CC1CB91926F4B51F00EDF909 /* priceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CB91826F4B51F00EDF909 /* priceVC.swift */; };
+		CC218BB826EB82CD0004E090 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC218BB726EB82CD0004E090 /* LoginVC.swift */; };
+		CC26BF2126EF5EDC0001FF4D /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26BF1F26EF5EDC0001FF4D /* LoginItem.swift */; };
+		CC26BF2226EF5EDC0001FF4D /* LoginItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */; };
+		CC26BF2426EF6F960001FF4D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26BF2326EF6F960001FF4D /* User.swift */; };
+		CC26BF2626EF6FB90001FF4D /* userManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26BF2526EF6FB90001FF4D /* userManager.swift */; };
+		CC2B1AC526D4FC780078ABC2 /* foodTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */; };
+		CC2B1AC726D4FCA80078ABC2 /* foodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC626D4FCA80078ABC2 /* foodVC.swift */; };
+		CC2B1ACA26D5132E0078ABC2 /* MealsCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC826D5132E0078ABC2 /* MealsCollectionItem.swift */; };
+		CC2B1ACB26D5132E0078ABC2 /* MealsCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2B1AC926D5132E0078ABC2 /* MealsCollectionItem.xib */; };
+		CC3443A426D3C21200686FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A326D3C21200686FA7 /* AppDelegate.swift */; };
+		CC3443A626D3C21200686FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A526D3C21200686FA7 /* SceneDelegate.swift */; };
+		CC3443A826D3C21200686FA7 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A726D3C21200686FA7 /* welcomeVC.swift */; };
+		CC3443AD26D3C21800686FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3443AC26D3C21800686FA7 /* Assets.xcassets */; };
+		CC3443B026D3C21800686FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3443AE26D3C21800686FA7 /* LaunchScreen.storyboard */; };
+		CC3443BB26D3C21900686FA7 /* charityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443BA26D3C21900686FA7 /* charityTests.swift */; };
+		CC3443C626D3C21900686FA7 /* charityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443C526D3C21900686FA7 /* charityUITests.swift */; };
+		CC3443D526D3C34300686FA7 /* welcomeTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443D326D3C34300686FA7 /* welcomeTableItem.swift */; };
+		CC3443D626D3C34300686FA7 /* welcomeTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3443D426D3C34300686FA7 /* welcomeTableItem.xib */; };
+		CC4832A526D79EBD007687B7 /* foodPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4832A326D79EBD007687B7 /* foodPlanVC.swift */; };
+		CC50CDAA26DCF41300BB866A /* payNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDA926DCF41300BB866A /* payNowVC.swift */; };
+		CC50CDAE26DCF4D700BB866A /* payTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDAC26DCF4D700BB866A /* payTableItem.swift */; };
+		CC50CDAF26DCF4D700BB866A /* payTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC50CDAD26DCF4D700BB866A /* payTableItem.xib */; };
+		CC50CDB226DD0B4000BB866A /* thankYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDB126DD0B4000BB866A /* thankYou.swift */; };
+		CC50CDB526DD0C7200BB866A /* thankYouitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDB326DD0C7200BB866A /* thankYouitem.swift */; };
+		CC50CDB626DD0C7200BB866A /* thankYouitem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC50CDB426DD0C7200BB866A /* thankYouitem.xib */; };
+		CC564E5326D903CD003EF3F6 /* detailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC564E5226D903CD003EF3F6 /* detailVC.swift */; };
+		CC564E5E26D911A7003EF3F6 /* billingDetailitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC564E5C26D911A7003EF3F6 /* billingDetailitem.swift */; };
+		CC564E5F26D911A7003EF3F6 /* billingDetailitem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC564E5D26D911A7003EF3F6 /* billingDetailitem.xib */; };
+		CC7186162701C508004F0140 /* searchLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7186152701C508004F0140 /* searchLocation.swift */; };
+		CC71861E2701F25B004F0140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC71861D2701F25B004F0140 /* Main.storyboard */; };
+		CC79C4BE26F9E4A800C21FB6 /* medicineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */; };
+		CC79C4BF26F9E4A800C21FB6 /* medicineItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */; };
+		CC848A3526D6657200F00D72 /* foodTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC3443B726D3C21900686FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC34439826D3C21200686FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC34439F26D3C21200686FA7;
+			remoteInfo = charity;
+		};
+		CC3443C226D3C21900686FA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC34439826D3C21200686FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC34439F26D3C21200686FA7;
+			remoteInfo = charity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC12EB1426E76FF100A994C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC12EB1326E76FF100A994C8 /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17A8F534F672AC266414A178 /* Pods-charity-charityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charity-charityUITests.debug.xcconfig"; path = "Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		368B4849D8260718B383F60F /* Pods-charity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charity.debug.xcconfig"; path = "Target Support Files/Pods-charity/Pods-charity.debug.xcconfig"; sourceTree = "<group>"; };
+		3E2CC1F82EC0FD9673DD049E /* Pods-charityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charityTests.debug.xcconfig"; path = "Target Support Files/Pods-charityTests/Pods-charityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66DAFC63E63AE201494D4D98 /* Pods-charity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charity.release.xcconfig"; path = "Target Support Files/Pods-charity/Pods-charity.release.xcconfig"; sourceTree = "<group>"; };
+		9CE73F3C30363618ED7382B6 /* Pods_charityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81B74759FA4F7E883568A7A /* Pods_charity_charityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charity_charityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4708A1926CB119375309AA6 /* Pods-charityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charityTests.release.xcconfig"; path = "Target Support Files/Pods-charityTests/Pods-charityTests.release.xcconfig"; sourceTree = "<group>"; };
+		C768C0AD3B19EB8F3808E94B /* Pods-charity-charityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charity-charityUITests.release.xcconfig"; path = "Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC0B3B4326E7951500927738 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC1082C626F9E13C0090BB68 /* medicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineVC.swift; sourceTree = "<group>"; };
+		CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = foodPlanTableItem.xib; sourceTree = "<group>"; };
+		CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodPlanTableItem.swift; sourceTree = "<group>"; };
+		CC15021426EA2CD2002BDDCB /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		CC1567AB26F8B413001777C8 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		CC1567AD26F8B4EB001777C8 /* medicineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineManager.swift; sourceTree = "<group>"; };
+		CC16302226FB496E00E98E70 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CC188E9626E8C0DB0035517B /* radioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioButton.swift; sourceTree = "<group>"; };
+		CC188E9826E8E0B70035517B /* paymentSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSheetVC.swift; sourceTree = "<group>"; };
+		CC188E9926E8E0B70035517B /* paymentSheetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paymentSheetVC.xib; sourceTree = "<group>"; };
+		CC1CB91226F4AA3500EDF909 /* priceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceItem.swift; sourceTree = "<group>"; };
+		CC1CB91326F4AA3500EDF909 /* priceItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = priceItem.xib; sourceTree = "<group>"; };
+		CC1CB91826F4B51F00EDF909 /* priceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceVC.swift; sourceTree = "<group>"; };
+		CC218BB726EB82CD0004E090 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CC26BF1F26EF5EDC0001FF4D /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginItem.xib; sourceTree = "<group>"; };
+		CC26BF2326EF6F960001FF4D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CC26BF2526EF6FB90001FF4D /* userManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userManager.swift; sourceTree = "<group>"; };
+		CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodTableItem.swift; sourceTree = "<group>"; };
+		CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodTableItem.xib; sourceTree = "<group>"; };
+		CC2B1AC626D4FCA80078ABC2 /* foodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodVC.swift; sourceTree = "<group>"; };
+		CC2B1AC826D5132E0078ABC2 /* MealsCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCollectionItem.swift; sourceTree = "<group>"; };
+		CC2B1AC926D5132E0078ABC2 /* MealsCollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealsCollectionItem.xib; sourceTree = "<group>"; };
+		CC3443A026D3C21200686FA7 /* charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3443A326D3C21200686FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC3443A526D3C21200686FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC3443A726D3C21200686FA7 /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
+		CC3443AC26D3C21800686FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC3443AF26D3C21800686FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC3443B626D3C21900686FA7 /* charityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = charityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3443BA26D3C21900686FA7 /* charityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charityTests.swift; sourceTree = "<group>"; };
+		CC3443BC26D3C21900686FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3443C126D3C21900686FA7 /* charityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = charityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3443C526D3C21900686FA7 /* charityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charityUITests.swift; sourceTree = "<group>"; };
+		CC3443C726D3C21900686FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3443D326D3C34300686FA7 /* welcomeTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeTableItem.swift; sourceTree = "<group>"; };
+		CC3443D426D3C34300686FA7 /* welcomeTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = welcomeTableItem.xib; sourceTree = "<group>"; };
+		CC4832A326D79EBD007687B7 /* foodPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodPlanVC.swift; sourceTree = "<group>"; };
+		CC50CDA926DCF41300BB866A /* payNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payNowVC.swift; sourceTree = "<group>"; };
+		CC50CDAC26DCF4D700BB866A /* payTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payTableItem.swift; sourceTree = "<group>"; };
+		CC50CDAD26DCF4D700BB866A /* payTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = payTableItem.xib; sourceTree = "<group>"; };
+		CC50CDB126DD0B4000BB866A /* thankYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thankYou.swift; sourceTree = "<group>"; };
+		CC50CDB326DD0C7200BB866A /* thankYouitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thankYouitem.swift; sourceTree = "<group>"; };
+		CC50CDB426DD0C7200BB866A /* thankYouitem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = thankYouitem.xib; sourceTree = "<group>"; };
+		CC564E5226D903CD003EF3F6 /* detailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailVC.swift; sourceTree = "<group>"; };
+		CC564E5C26D911A7003EF3F6 /* billingDetailitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billingDetailitem.swift; sourceTree = "<group>"; };
+		CC564E5D26D911A7003EF3F6 /* billingDetailitem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = billingDetailitem.xib; sourceTree = "<group>"; };
+		CC7186152701C508004F0140 /* searchLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchLocation.swift; sourceTree = "<group>"; };
+		CC7186192701CAE9004F0140 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC71861D2701F25B004F0140 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineItem.swift; sourceTree = "<group>"; };
+		CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = medicineItem.xib; sourceTree = "<group>"; };
+		F0D5020AF0B569BD8E3387D0 /* Pods_charity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC34439D26D3C21200686FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEA36C3CCEC173ABD3E5887 /* Pods_charity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443B326D3C21900686FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8F18BBDB349E361356E874 /* Pods_charityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443BE26D3C21900686FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817297410BD6E99D2BC74625 /* Pods_charity_charityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B5917EF71431AFB38460A3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D5020AF0B569BD8E3387D0 /* Pods_charity.framework */,
+				B81B74759FA4F7E883568A7A /* Pods_charity_charityUITests.framework */,
+				9CE73F3C30363618ED7382B6 /* Pods_charityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A411E036B62EB82E6CD624E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				368B4849D8260718B383F60F /* Pods-charity.debug.xcconfig */,
+				66DAFC63E63AE201494D4D98 /* Pods-charity.release.xcconfig */,
+				17A8F534F672AC266414A178 /* Pods-charity-charityUITests.debug.xcconfig */,
+				C768C0AD3B19EB8F3808E94B /* Pods-charity-charityUITests.release.xcconfig */,
+				3E2CC1F82EC0FD9673DD049E /* Pods-charityTests.debug.xcconfig */,
+				C4708A1926CB119375309AA6 /* Pods-charityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC15021226EA2C30002BDDCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC15021426EA2CD2002BDDCB /* Food.swift */,
+				CC26BF2326EF6F960001FF4D /* User.swift */,
+				CC1567AB26F8B413001777C8 /* Medicine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC15021326EA2C4B002BDDCB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BF2526EF6FB90001FF4D /* userManager.swift */,
+				CC1567AD26F8B4EB001777C8 /* medicineManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CC218BB626EB6C700004E090 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				CC79C4C126F9E73100C21FB6 /* price */,
+				CC79C4C026F9E71400C21FB6 /* medicine */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		CC2B1ACC26D518FB0078ABC2 /* collectinView */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B1AC826D5132E0078ABC2 /* MealsCollectionItem.swift */,
+				CC2B1AC926D5132E0078ABC2 /* MealsCollectionItem.xib */,
+				CC188E9626E8C0DB0035517B /* radioButton.swift */,
+			);
+			path = collectinView;
+			sourceTree = "<group>";
+		};
+		CC34439726D3C21200686FA7 = {
+			isa = PBXGroup;
+			children = (
+				CC3443A226D3C21200686FA7 /* charity */,
+				CC3443B926D3C21900686FA7 /* charityTests */,
+				CC3443C426D3C21900686FA7 /* charityUITests */,
+				CC3443A126D3C21200686FA7 /* Products */,
+				6B5917EF71431AFB38460A3A /* Frameworks */,
+				A411E036B62EB82E6CD624E4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CC3443A126D3C21200686FA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC3443A026D3C21200686FA7 /* charity.app */,
+				CC3443B626D3C21900686FA7 /* charityTests.xctest */,
+				CC3443C126D3C21900686FA7 /* charityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3443A226D3C21200686FA7 /* charity */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5351626FC7EF4000DE549 /* storyboard */,
+				CC15021326EA2C4B002BDDCB /* Managers */,
+				CC15021226EA2C30002BDDCB /* Models */,
+				CC2B1ACC26D518FB0078ABC2 /* collectinView */,
+				CC3443D826D3C37700686FA7 /* Controllers */,
+				CC3443D726D3C35200686FA7 /* TableViewCells */,
+				CC3443A526D3C21200686FA7 /* SceneDelegate.swift */,
+				CC0B3B4326E7951500927738 /* GoogleService-Info.plist */,
+				CC3443AC26D3C21800686FA7 /* Assets.xcassets */,
+				CC3443AE26D3C21800686FA7 /* LaunchScreen.storyboard */,
+				CC3443A326D3C21200686FA7 /* AppDelegate.swift */,
+				CC7186192701CAE9004F0140 /* Info.plist */,
+			);
+			path = charity;
+			sourceTree = "<group>";
+		};
+		CC3443B926D3C21900686FA7 /* charityTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC3443BA26D3C21900686FA7 /* charityTests.swift */,
+				CC3443BC26D3C21900686FA7 /* Info.plist */,
+			);
+			path = charityTests;
+			sourceTree = "<group>";
+		};
+		CC3443C426D3C21900686FA7 /* charityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC3443C526D3C21900686FA7 /* charityUITests.swift */,
+				CC3443C726D3C21900686FA7 /* Info.plist */,
+			);
+			path = charityUITests;
+			sourceTree = "<group>";
+		};
+		CC3443D726D3C35200686FA7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CC50CDAB26DCF44A00BB866A /* foodplan */,
+				CC4832A226D79D20007687B7 /* foodTableItem */,
+				CC3443D926D3C39C00686FA7 /* welcomeTableItem */,
+				CC564E6026D91252003EF3F6 /* billing */,
+				CC50CDB026DCF4E400BB866A /* paynow */,
+				CC218BB626EB6C700004E090 /* login */,
+				CC1CB91226F4AA3500EDF909 /* priceItem.swift */,
+				CC1CB91326F4AA3500EDF909 /* priceItem.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CC3443D826D3C37700686FA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC7186152701C508004F0140 /* searchLocation.swift */,
+				CC188E9826E8E0B70035517B /* paymentSheetVC.swift */,
+				CC188E9926E8E0B70035517B /* paymentSheetVC.xib */,
+				CC4832A326D79EBD007687B7 /* foodPlanVC.swift */,
+				CC50CDB126DD0B4000BB866A /* thankYou.swift */,
+				CC3443A726D3C21200686FA7 /* welcomeVC.swift */,
+				CC50CDA926DCF41300BB866A /* payNowVC.swift */,
+				CC2B1AC626D4FCA80078ABC2 /* foodVC.swift */,
+				CC564E5226D903CD003EF3F6 /* detailVC.swift */,
+				CC218BB726EB82CD0004E090 /* LoginVC.swift */,
+				CC1CB91826F4B51F00EDF909 /* priceVC.swift */,
+				CC1082C626F9E13C0090BB68 /* medicineVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC3443D926D3C39C00686FA7 /* welcomeTableItem */ = {
+			isa = PBXGroup;
+			children = (
+				CC3443D326D3C34300686FA7 /* welcomeTableItem.swift */,
+				CC3443D426D3C34300686FA7 /* welcomeTableItem.xib */,
+			);
+			path = welcomeTableItem;
+			sourceTree = "<group>";
+		};
+		CC4832A226D79D20007687B7 /* foodTableItem */ = {
+			isa = PBXGroup;
+			children = (
+				CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */,
+				CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */,
+			);
+			path = foodTableItem;
+			sourceTree = "<group>";
+		};
+		CC50CDAB26DCF44A00BB866A /* foodplan */ = {
+			isa = PBXGroup;
+			children = (
+				CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */,
+				CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */,
+			);
+			path = foodplan;
+			sourceTree = "<group>";
+		};
+		CC50CDB026DCF4E400BB866A /* paynow */ = {
+			isa = PBXGroup;
+			children = (
+				CC50CDAC26DCF4D700BB866A /* payTableItem.swift */,
+				CC50CDAD26DCF4D700BB866A /* payTableItem.xib */,
+				CC50CDB826DD0CB500BB866A /* thankYouitem */,
+			);
+			path = paynow;
+			sourceTree = "<group>";
+		};
+		CC50CDB826DD0CB500BB866A /* thankYouitem */ = {
+			isa = PBXGroup;
+			children = (
+				CC50CDB326DD0C7200BB866A /* thankYouitem.swift */,
+				CC50CDB426DD0C7200BB866A /* thankYouitem.xib */,
+			);
+			path = thankYouitem;
+			sourceTree = "<group>";
+		};
+		CC564E6026D91252003EF3F6 /* billing */ = {
+			isa = PBXGroup;
+			children = (
+				CC564E5D26D911A7003EF3F6 /* billingDetailitem.xib */,
+				CC564E5C26D911A7003EF3F6 /* billingDetailitem.swift */,
+			);
+			path = billing;
+			sourceTree = "<group>";
+		};
+		CC79C4C026F9E71400C21FB6 /* medicine */ = {
+			isa = PBXGroup;
+			children = (
+				CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */,
+				CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */,
+			);
+			path = medicine;
+			sourceTree = "<group>";
+		};
+		CC79C4C126F9E73100C21FB6 /* price */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BF1F26EF5EDC0001FF4D /* LoginItem.swift */,
+				CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */,
+			);
+			path = price;
+			sourceTree = "<group>";
+		};
+		CCC5351626FC7EF4000DE549 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC16302226FB496E00E98E70 /* Auth.storyboard */,
+				CC71861D2701F25B004F0140 /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC34439F26D3C21200686FA7 /* charity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3443CA26D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charity" */;
+			buildPhases = (
+				0DBBB9C6F2FE2D0FD873DA86 /* [CP] Check Pods Manifest.lock */,
+				CC34439C26D3C21200686FA7 /* Sources */,
+				CC34439D26D3C21200686FA7 /* Frameworks */,
+				CC34439E26D3C21200686FA7 /* Resources */,
+				CC12EB1426E76FF100A994C8 /* Embed Frameworks */,
+				8D2AECDD651A70BB8C90E700 /* [CP] Embed Pods Frameworks */,
+				1E06A1A2F5A417EFB9B796E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = charity;
+			productName = charity;
+			productReference = CC3443A026D3C21200686FA7 /* charity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC3443B526D3C21900686FA7 /* charityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3443CD26D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charityTests" */;
+			buildPhases = (
+				C0390B12AD805890B31CE0A6 /* [CP] Check Pods Manifest.lock */,
+				CC3443B226D3C21900686FA7 /* Sources */,
+				CC3443B326D3C21900686FA7 /* Frameworks */,
+				CC3443B426D3C21900686FA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC3443B826D3C21900686FA7 /* PBXTargetDependency */,
+			);
+			name = charityTests;
+			productName = charityTests;
+			productReference = CC3443B626D3C21900686FA7 /* charityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC3443C026D3C21900686FA7 /* charityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3443D026D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charityUITests" */;
+			buildPhases = (
+				C6677132691A431AA1F01393 /* [CP] Check Pods Manifest.lock */,
+				CC3443BD26D3C21900686FA7 /* Sources */,
+				CC3443BE26D3C21900686FA7 /* Frameworks */,
+				CC3443BF26D3C21900686FA7 /* Resources */,
+				68C053E34F98E48B98EAC2CC /* [CP] Embed Pods Frameworks */,
+				B2367461B81AEDC6206DF8AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC3443C326D3C21900686FA7 /* PBXTargetDependency */,
+			);
+			name = charityUITests;
+			productName = charityUITests;
+			productReference = CC3443C126D3C21900686FA7 /* charityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC34439826D3C21200686FA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Daniyal Hussain";
+				TargetAttributes = {
+					CC34439F26D3C21200686FA7 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CC3443B526D3C21900686FA7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = CC34439F26D3C21200686FA7;
+					};
+					CC3443C026D3C21900686FA7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = CC34439F26D3C21200686FA7;
+					};
+				};
+			};
+			buildConfigurationList = CC34439B26D3C21200686FA7 /* Build configuration list for PBXProject "charity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC34439726D3C21200686FA7;
+			productRefGroup = CC3443A126D3C21200686FA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC34439F26D3C21200686FA7 /* charity */,
+				CC3443B526D3C21900686FA7 /* charityTests */,
+				CC3443C026D3C21900686FA7 /* charityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC34439E26D3C21200686FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26BF2226EF5EDC0001FF4D /* LoginItem.xib in Resources */,
+				CC564E5F26D911A7003EF3F6 /* billingDetailitem.xib in Resources */,
+				CC3443D626D3C34300686FA7 /* welcomeTableItem.xib in Resources */,
+				CC12EB0D26E76E2200A994C8 /* foodPlanTableItem.xib in Resources */,
+				CC1CB91526F4AA3500EDF909 /* priceItem.xib in Resources */,
+				CC79C4BF26F9E4A800C21FB6 /* medicineItem.xib in Resources */,
+				CC3443B026D3C21800686FA7 /* LaunchScreen.storyboard in Resources */,
+				CC2B1AC526D4FC780078ABC2 /* foodTableItem.xib in Resources */,
+				CC16302326FB496E00E98E70 /* Auth.storyboard in Resources */,
+				CC50CDB626DD0C7200BB866A /* thankYouitem.xib in Resources */,
+				CC50CDAF26DCF4D700BB866A /* payTableItem.xib in Resources */,
+				CC71861E2701F25B004F0140 /* Main.storyboard in Resources */,
+				CC188E9B26E8E0B70035517B /* paymentSheetVC.xib in Resources */,
+				CC3443AD26D3C21800686FA7 /* Assets.xcassets in Resources */,
+				CC0B3B4426E7951500927738 /* GoogleService-Info.plist in Resources */,
+				CC2B1ACB26D5132E0078ABC2 /* MealsCollectionItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443B426D3C21900686FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443BF26D3C21900686FA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DBBB9C6F2FE2D0FD873DA86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-charity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E06A1A2F5A417EFB9B796E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68C053E34F98E48B98EAC2CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D2AECDD651A70BB8C90E700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charity/Pods-charity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2367461B81AEDC6206DF8AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0390B12AD805890B31CE0A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-charityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6677132691A431AA1F01393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-charity-charityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC34439C26D3C21200686FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1CB91426F4AA3500EDF909 /* priceItem.swift in Sources */,
+				CC2B1AC726D4FCA80078ABC2 /* foodVC.swift in Sources */,
+				CC3443D526D3C34300686FA7 /* welcomeTableItem.swift in Sources */,
+				CC3443A826D3C21200686FA7 /* welcomeVC.swift in Sources */,
+				CC3443A426D3C21200686FA7 /* AppDelegate.swift in Sources */,
+				CC50CDAA26DCF41300BB866A /* payNowVC.swift in Sources */,
+				CC15021526EA2CD2002BDDCB /* Food.swift in Sources */,
+				CC1567AC26F8B413001777C8 /* Medicine.swift in Sources */,
+				CC848A3526D6657200F00D72 /* foodTableItem.swift in Sources */,
+				CC1567AE26F8B4EB001777C8 /* medicineManager.swift in Sources */,
+				CC188E9A26E8E0B70035517B /* paymentSheetVC.swift in Sources */,
+				CC7186162701C508004F0140 /* searchLocation.swift in Sources */,
+				CC26BF2626EF6FB90001FF4D /* userManager.swift in Sources */,
+				CC2B1ACA26D5132E0078ABC2 /* MealsCollectionItem.swift in Sources */,
+				CC188E9726E8C0DB0035517B /* radioButton.swift in Sources */,
+				CC1CB91926F4B51F00EDF909 /* priceVC.swift in Sources */,
+				CC3443A626D3C21200686FA7 /* SceneDelegate.swift in Sources */,
+				CC50CDB526DD0C7200BB866A /* thankYouitem.swift in Sources */,
+				CC4832A526D79EBD007687B7 /* foodPlanVC.swift in Sources */,
+				CC218BB826EB82CD0004E090 /* LoginVC.swift in Sources */,
+				CC50CDAE26DCF4D700BB866A /* payTableItem.swift in Sources */,
+				CC12EB0E26E76E2200A994C8 /* foodPlanTableItem.swift in Sources */,
+				CC564E5E26D911A7003EF3F6 /* billingDetailitem.swift in Sources */,
+				CC79C4BE26F9E4A800C21FB6 /* medicineItem.swift in Sources */,
+				CC1082C726F9E13C0090BB68 /* medicineVC.swift in Sources */,
+				CC50CDB226DD0B4000BB866A /* thankYou.swift in Sources */,
+				CC564E5326D903CD003EF3F6 /* detailVC.swift in Sources */,
+				CC26BF2126EF5EDC0001FF4D /* LoginItem.swift in Sources */,
+				CC26BF2426EF6F960001FF4D /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443B226D3C21900686FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3443BB26D3C21900686FA7 /* charityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3443BD26D3C21900686FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3443C626D3C21900686FA7 /* charityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC3443B826D3C21900686FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC34439F26D3C21200686FA7 /* charity */;
+			targetProxy = CC3443B726D3C21900686FA7 /* PBXContainerItemProxy */;
+		};
+		CC3443C326D3C21900686FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC34439F26D3C21200686FA7 /* charity */;
+			targetProxy = CC3443C226D3C21900686FA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC3443AE26D3C21800686FA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3443AF26D3C21800686FA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC3443C826D3C21900686FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC3443C926D3C21900686FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC3443CB26D3C21900686FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368B4849D8260718B383F60F /* Pods-charity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC3443CC26D3C21900686FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DAFC63E63AE201494D4D98 /* Pods-charity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC3443CE26D3C21900686FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2CC1F82EC0FD9673DD049E /* Pods-charityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/charity.app/charity";
+			};
+			name = Debug;
+		};
+		CC3443CF26D3C21900686FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4708A1926CB119375309AA6 /* Pods-charityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/charity.app/charity";
+			};
+			name = Release;
+		};
+		CC3443D126D3C21900686FA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A8F534F672AC266414A178 /* Pods-charity-charityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = charity;
+			};
+			name = Debug;
+		};
+		CC3443D226D3C21900686FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C768C0AD3B19EB8F3808E94B /* Pods-charity-charityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ6288KFUT;
+				INFOPLIST_FILE = charityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = charity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC34439B26D3C21200686FA7 /* Build configuration list for PBXProject "charity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3443C826D3C21900686FA7 /* Debug */,
+				CC3443C926D3C21900686FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3443CA26D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3443CB26D3C21900686FA7 /* Debug */,
+				CC3443CC26D3C21900686FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3443CD26D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3443CE26D3C21900686FA7 /* Debug */,
+				CC3443CF26D3C21900686FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3443D026D3C21900686FA7 /* Build configuration list for PBXNativeTarget "charityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3443D126D3C21900686FA7 /* Debug */,
+				CC3443D226D3C21900686FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC34439826D3C21200686FA7 /* Project object */;
+}
