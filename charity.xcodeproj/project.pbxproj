@@ -229,7 +229,8 @@
 		CC218BB626EB6C700004E090 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				CC79C4C126F9E73100C21FB6 /* price */,
+				CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */,
+				CC26BF1F26EF5EDC0001FF4D /* LoginItem.swift */,
 				CC79C4C026F9E71400C21FB6 /* medicine */,
 			);
 			path = login;
@@ -313,8 +314,6 @@
 				CC564E6026D91252003EF3F6 /* billing */,
 				CC50CDB026DCF4E400BB866A /* paynow */,
 				CC218BB626EB6C700004E090 /* login */,
-				CC1CB91226F4AA3500EDF909 /* priceItem.swift */,
-				CC1CB91326F4AA3500EDF909 /* priceItem.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -368,6 +367,7 @@
 		CC50CDB026DCF4E400BB866A /* paynow */ = {
 			isa = PBXGroup;
 			children = (
+				CC79C4C126F9E73100C21FB6 /* price */,
 				CC50CDAC26DCF4D700BB866A /* payTableItem.swift */,
 				CC50CDAD26DCF4D700BB866A /* payTableItem.xib */,
 				CC50CDB826DD0CB500BB866A /* thankYouitem */,
@@ -405,8 +405,8 @@
 		CC79C4C126F9E73100C21FB6 /* price */ = {
 			isa = PBXGroup;
 			children = (
-				CC26BF1F26EF5EDC0001FF4D /* LoginItem.swift */,
-				CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */,
+				CC1CB91226F4AA3500EDF909 /* priceItem.swift */,
+				CC1CB91326F4AA3500EDF909 /* priceItem.xib */,
 			);
 			path = price;
 			sourceTree = "<group>";
