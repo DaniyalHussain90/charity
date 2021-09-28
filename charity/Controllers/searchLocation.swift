@@ -13,6 +13,7 @@ class searchLocation: UIViewController, UISearchBarDelegate, MKLocalSearchComple
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchResultsTable: UITableView!
+    @IBOutlet weak var bckButton: UIButton!
     
     // Create a seach completer object
     var searchCompleter = MKLocalSearchCompleter()
@@ -29,6 +30,8 @@ class searchLocation: UIViewController, UISearchBarDelegate, MKLocalSearchComple
         searchBar?.delegate = self
         searchResultsTable?.delegate = self
         searchResultsTable?.dataSource = self
+       // self.bckButton.addTarget(self, action: #selector(bckButton(sender:)), for: .touchUpInside)
+
     }
     
     // This method declares that whenever the text in the searchbar is change to also update
@@ -53,6 +56,12 @@ class searchLocation: UIViewController, UISearchBarDelegate, MKLocalSearchComple
     func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
         // Error
     }
+    
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+
+    }
+    
 
 
 }
@@ -84,6 +93,8 @@ extension searchLocation: UITableViewDataSource {
         cell.detailTextLabel?.text = searchResult.subtitle
         return cell
     }
+    
+    
 }
 
 extension searchLocation: UITableViewDelegate {
@@ -121,15 +132,14 @@ extension searchLocation: UITableViewDelegate {
             
 
             
-            
-            self.navigationController?.popViewController(animated: true)
-            
-            print(name)
-            
+
+            }
+        
+        self.navigationController?.popViewController(animated: true)
+
+
             
         }
-        
-    }
-}
 
+    }
 

@@ -43,6 +43,7 @@
 		CC3443C626D3C21900686FA7 /* charityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443C526D3C21900686FA7 /* charityUITests.swift */; };
 		CC3443D526D3C34300686FA7 /* welcomeTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443D326D3C34300686FA7 /* welcomeTableItem.swift */; };
 		CC3443D626D3C34300686FA7 /* welcomeTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3443D426D3C34300686FA7 /* welcomeTableItem.xib */; };
+		CC34E14C2703231E008E2A37 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34E14B2703231E008E2A37 /* mapVC.swift */; };
 		CC4832A526D79EBD007687B7 /* foodPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4832A326D79EBD007687B7 /* foodPlanVC.swift */; };
 		CC50CDAA26DCF41300BB866A /* payNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDA926DCF41300BB866A /* payNowVC.swift */; };
 		CC50CDAE26DCF4D700BB866A /* payTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50CDAC26DCF4D700BB866A /* payTableItem.swift */; };
@@ -138,6 +139,7 @@
 		CC3443C726D3C21900686FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3443D326D3C34300686FA7 /* welcomeTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeTableItem.swift; sourceTree = "<group>"; };
 		CC3443D426D3C34300686FA7 /* welcomeTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = welcomeTableItem.xib; sourceTree = "<group>"; };
+		CC34E14B2703231E008E2A37 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
 		CC4832A326D79EBD007687B7 /* foodPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodPlanVC.swift; sourceTree = "<group>"; };
 		CC50CDA926DCF41300BB866A /* payNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payNowVC.swift; sourceTree = "<group>"; };
 		CC50CDAC26DCF4D700BB866A /* payTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payTableItem.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				CC7186152701C508004F0140 /* searchLocation.swift */,
+				CC34E14B2703231E008E2A37 /* mapVC.swift */,
 				CC188E9826E8E0B70035517B /* paymentSheetVC.swift */,
 				CC188E9926E8E0B70035517B /* paymentSheetVC.xib */,
 				CC4832A326D79EBD007687B7 /* foodPlanVC.swift */,
@@ -367,9 +370,9 @@
 		CC50CDB026DCF4E400BB866A /* paynow */ = {
 			isa = PBXGroup;
 			children = (
-				CC79C4C126F9E73100C21FB6 /* price */,
 				CC50CDAC26DCF4D700BB866A /* payTableItem.swift */,
 				CC50CDAD26DCF4D700BB866A /* payTableItem.xib */,
+				CC79C4C126F9E73100C21FB6 /* price */,
 				CC50CDB826DD0CB500BB866A /* thankYouitem */,
 			);
 			path = paynow;
@@ -714,6 +717,7 @@
 				CC3443D526D3C34300686FA7 /* welcomeTableItem.swift in Sources */,
 				CC3443A826D3C21200686FA7 /* welcomeVC.swift in Sources */,
 				CC3443A426D3C21200686FA7 /* AppDelegate.swift in Sources */,
+				CC34E14C2703231E008E2A37 /* mapVC.swift in Sources */,
 				CC50CDAA26DCF41300BB866A /* payNowVC.swift in Sources */,
 				CC15021526EA2CD2002BDDCB /* Food.swift in Sources */,
 				CC1567AC26F8B413001777C8 /* Medicine.swift in Sources */,

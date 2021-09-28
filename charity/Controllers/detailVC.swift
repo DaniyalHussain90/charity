@@ -77,7 +77,7 @@ cell?.selectionStyle = .none
     
     @objc func editButton (sender: UIButton){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-     //   let myvc = storyBoard.instantiateViewController(withIdentifier: "mapVC") as! mapVC
-     //   self.navigationController?.pushViewController(myvc, animated: true)
+        let myvc = storyBoard.instantiateViewController(withIdentifier: "mapVC") as! mapVC
+        self.navigationController?.pushViewController(myvc, animated: true)
     }
 }
