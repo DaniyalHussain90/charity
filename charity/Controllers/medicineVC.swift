@@ -16,7 +16,8 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     var arr = [String]()
-    var arr2 = [String]()
+    
+    let spinner = UIActivityIndicatorView(style: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,24 +26,23 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         loadingNotification.mode = MBProgressHUDMode.indeterminate
         loadingNotification.label.text = "Loading"
         
-        medicineManager.shared.getAllMedicineNameForm { [self] data in
-            arr = data
-            MBProgressHUD.hide(for: view, animated: true)
-            tableView7.reloadData()
-        }
         
-//        medicineManager.shared.getAllCountryNameForm { [self] country in
-//            arr2 = country
-//            tableView7.reloadData()
-//        }
-//
         tableView7.dataSource = self
         tableView7.delegate = self
        
         
         let nibcell=UINib(nibName: "medicineItem", bundle: nil)
         tableView7.register(nibcell, forCellReuseIdentifier: "medicineItem")
+        data(limit: 10)
 
+    }
+    
+    func data(limit:Int){
+        medicineManager.shared.getAllMedicineNameForm(limit: 20) { [self] data in
+            arr = data
+            MBProgressHUD.hide(for: view, animated: true)
+            tableView7.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,5 +61,30 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+            let count = self.arr.count - 1
+            if self.arr.count >= count {
+                let count = self.arr.count
+                let lastElement = count - 1
+                let lastPost = self.arr.count
+                print(lastPost)
+                
+                if indexPath.section == lastElement {
+                    
+                 
+                        self.tableView7.tableFooterView?.isHidden = true
+                
+                        spinner.startAnimating()
+                        spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView7.bounds.width, height: CGFloat(44))
+                        self.tableView7.tableFooterView = spinner
+                        self.tableView7.tableFooterView?.isHidden = false
+                        
+                    self.data(limit: 10)
+                }
+                
+ 
+            }
+            
+            
+        }
 }

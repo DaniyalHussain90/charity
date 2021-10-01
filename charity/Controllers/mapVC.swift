@@ -8,20 +8,24 @@
 
 import UIKit
 import GoogleMaps
-class mapVC: UIViewController, CLLocationManagerDelegate {
+class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     let locationManager = CLLocationManager()
 
     @IBOutlet weak var buttonS: UIButton!
     @IBOutlet weak var map: GMSMapView!
     @IBOutlet weak var searchButton2: UISearchBar!
+    @IBOutlet weak var bckButton1: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(self.showSpinningWheel(_:)), name: NSNotification.Name(rawValue: "notification"), object: nil)
         
         self.locationManager.requestAlwaysAuthorization()
-
+        map.settings.myLocationButton = true
+        map.isMyLocationEnabled = true
+        self.map.delegate = self
+        
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
 
@@ -58,16 +62,29 @@ class mapVC: UIViewController, CLLocationManagerDelegate {
             if let long = notification.userInfo?["locLongitude"] as? Double {
                 self.searchButton2.text = name
                 print(name)
-                map.animate(to: GMSCameraPosition(latitude: lat, longitude: long, zoom: 50))
+                map.animate(to: GMSCameraPosition(latitude: lat, longitude: long, zoom: 30))
         }
     }
      }
+        
+        
        
        
 }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        let locValue: CLLocationCoordinate2D = locationManager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
+        map.animate(to: GMSCameraPosition(latitude: locValue.latitude, longitude: locValue.longitude, zoom: 30))
+    }
+    
+    func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
+        if toLocation != nil {
+            map.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 10)
+        }
     }
 
+    @IBAction func bckButton1(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+
+    }
 }

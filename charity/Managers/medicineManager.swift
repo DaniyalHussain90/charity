@@ -18,12 +18,12 @@ class medicineManager {
         self.baseUrl = baseUrl
     }
     
-    func  getAllMedicineNameForm(completion:@escaping([String])->Void){
+    func  getAllMedicineNameForm(limit: Int,completion:@escaping([String])->Void){
 
         var arr = [String]()
         
-        let params = ["api_key": "ZqcLdmkS6ye8xtZo8lxk7I6fJob6FCmpk6erzmDf", "search":"receivedate:[20040101+TO+20081231]","limit": "100"]
-        AF.request(self.baseUrl+"?search=receivedate:[20040101+TO+20081231]&limit=10").responseJSON { response in
+        let params = ["api_key": "ZqcLdmkS6ye8xtZo8lxk7I6fJob6FCmpk6erzmDf", "search":"receivedate:[20040101+TO+20081231]","limit": "\(limit)"]
+        AF.request(self.baseUrl+"?search=receivedate:[20040101+TO+20081231]&limit=\(limit)").responseJSON { response in
             print("Response = \(response.value)")
             let value = response.value as? [String:Any]
             let meta = value?["meta"] as? [String:Any]
