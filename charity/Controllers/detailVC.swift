@@ -44,7 +44,6 @@ cell?.selectionStyle = .none
         cell?.priceButton2.text =  UserDefaults.standard.string(forKey: "price")
         cell?.editButton.addTarget(self, action: #selector(editButton), for: .touchUpInside)
 
-        
         return cell!
 }
     
@@ -79,5 +78,16 @@ cell?.selectionStyle = .none
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let myvc = storyBoard.instantiateViewController(withIdentifier: "mapVC") as! mapVC
         self.navigationController?.pushViewController(myvc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "billingDetailitem") as? billingDetailitem
+
+        if cell!.creditButton.isSelected == true {
+            print("credit")
+        }
+        
+
     }
 }

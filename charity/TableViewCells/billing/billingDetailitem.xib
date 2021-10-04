@@ -115,8 +115,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq8-3A-hyb">
                                         <rect key="frame" x="0.0" y="95" width="365" height="75.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paypal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my7-H8-z9S">
-                                                <rect key="frame" x="8" y="27" width="55" height="21.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my7-H8-z9S">
+                                                <rect key="frame" x="8" y="27" width="81.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" name="themeBlue"/>
                                                 <nil key="highlightedColor"/>
@@ -258,13 +258,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="appleButton" destination="o34-fR-Krc" id="nbW-hF-mmW"/>
                 <outlet property="arrowButton" destination="DtY-Px-0Bg" id="xJK-cX-ecv"/>
-                <outlet property="checkButton" destination="sAK-af-ozr" id="fHV-zK-uZw"/>
-                <outlet property="crditButtton" destination="ayc-AD-TIS" id="QeQ-bm-ee5"/>
+                <outlet property="checkButton" destination="sAK-af-ozr" id="ENy-7z-xdz"/>
+                <outlet property="creditButton" destination="ayc-AD-TIS" id="wv2-jm-R20"/>
                 <outlet property="editButton" destination="4sM-CE-F3D" id="yff-Sp-Z1n"/>
+                <outlet property="googleButton" destination="U9q-41-Psi" id="CaC-Tg-8BC"/>
                 <outlet property="googleMaps" destination="pAU-An-Q5E" id="tzr-2V-zGv"/>
-                <outlet property="googlePayButton" destination="U9q-41-Psi" id="vcU-A8-TS9"/>
-                <outlet property="paypalButton" destination="o34-fR-Krc" id="tjq-Wv-FNQ"/>
                 <outlet property="priceButton2" destination="43s-of-PW9" id="AXp-AI-UbL"/>
                 <outlet property="ringButton" destination="Ksx-GX-OCc" id="CWu-sH-i0l"/>
             </connections>

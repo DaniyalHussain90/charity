@@ -11,7 +11,7 @@ import GoogleMaps
 import Firebase
 import FBSDKCoreKit
 import IQKeyboardManagerSwift
-
+import SquareInAppPaymentsSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     didFinishLaunchingWithOptions: launchOptions
                 )
         IQKeyboardManager.shared.enable = true
+        SQIPInAppPaymentsSDK.squareApplicationID = "sandbox-sq0idb-KQQclD8WHqB77fT4o0wnag"
 
         return true
         

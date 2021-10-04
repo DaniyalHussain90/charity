@@ -20,19 +20,23 @@ class billingDetailitem: UITableViewCell {
     
     @IBOutlet weak var googleMaps: GMSMapView!
     
-    @IBOutlet weak var crditButtton: UIButton!
+  
+    @IBOutlet weak var creditButton: CheckBox!
+        
+    @IBOutlet weak var appleButton: CheckBox!
     
-    @IBOutlet weak var paypalButton: UIButton!
-    @IBOutlet weak var googlePayButton: UIButton!
+    @IBOutlet weak var googleButton: CheckBox!
     
-    @IBOutlet weak var checkButton: UIButton!
     
     @IBOutlet weak var priceButton2: UILabel!
+    @IBOutlet weak var checkButton: UIButton!
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         // Initialization code
     }
 

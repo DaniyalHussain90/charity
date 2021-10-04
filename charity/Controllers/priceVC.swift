@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
-class priceVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+import SquareInAppPaymentsSDK
+class priceVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SQIPCardEntryViewControllerDelegate {
+    
+    
 
     @IBOutlet weak var tableView6: UITableView!
     
@@ -42,15 +44,30 @@ class priceVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
          return cell!
     }
     @objc func donateButton (sender: UIButton){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let myvc = storyBoard.instantiateViewController(withIdentifier: "detailVC") as! detailVC
-        self.navigationController?.pushViewController(myvc, animated: true)
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let myvc = storyBoard.instantiateViewController(withIdentifier: "detailVC") as! detailVC
+//        self.navigationController?.pushViewController(myvc, animated: true)
+        let theme = SQIPTheme()
+        theme.tintColor = .green
+        
+        let cardEntry = SQIPCardEntryViewController(theme: theme)
+        cardEntry.delegate = self
+        navigationController?.pushViewController( cardEntry, animated: true)
+
     }
      
     @objc func backButton (sender: UIButton){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let myvc = storyBoard.instantiateViewController(withIdentifier: "detailVC") as! detailVC
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func cardEntryViewController(_ cardEntryViewController: SQIPCardEntryViewController, didObtain cardDetails: SQIPCardDetails, completionHandler: @escaping (Error?) -> Void) {
+        
+    }
+    
+    func cardEntryViewController(_ cardEntryViewController: SQIPCardEntryViewController, didCompleteWith status: SQIPCardEntryCompletionStatus) {
+        
     }
 
   

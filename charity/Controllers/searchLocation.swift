@@ -56,7 +56,6 @@ class searchLocation: UIViewController, UISearchBarDelegate, MKLocalSearchComple
     func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
         // Error
     }
-    
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
 

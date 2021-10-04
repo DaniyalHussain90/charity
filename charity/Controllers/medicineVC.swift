@@ -17,10 +17,12 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var arr = [String]()
     
-    let spinner = UIActivityIndicatorView(style: .gray)
+    let spinner = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        spinner.startAnimating()
         
         let loadingNotification = MBProgressHUD.showAdded(to: view, animated: true)
         loadingNotification.mode = MBProgressHUDMode.indeterminate
@@ -42,6 +44,7 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             arr = data
             MBProgressHUD.hide(for: view, animated: true)
             tableView7.reloadData()
+            
         }
     }
     
@@ -61,6 +64,8 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
             let count = self.arr.count - 1
             if self.arr.count >= count {
@@ -72,7 +77,6 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 if indexPath.section == lastElement {
                     
                  
-                        self.tableView7.tableFooterView?.isHidden = true
                 
                         spinner.startAnimating()
                         spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView7.bounds.width, height: CGFloat(44))
@@ -87,4 +91,12 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             
         }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
 }

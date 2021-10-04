@@ -20,6 +20,7 @@ target 'charity' do
   pod 'MBProgressHUD'
   pod 'PaginatedTableView'
  pod 'PaginationController'
+  pod "SquareInAppPaymentsSDK"
 
 
 
