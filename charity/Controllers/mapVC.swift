@@ -11,6 +11,7 @@ import GoogleMaps
 class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     let locationManager = CLLocationManager()
+    let marker: GMSMarker = GMSMarker() // Allocating Marker
 
     @IBOutlet weak var buttonS: UIButton!
     @IBOutlet weak var map: GMSMapView!
@@ -68,13 +69,31 @@ class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
      }
         
         
-       
+
        
 }
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue: CLLocationCoordinate2D = locationManager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         map.animate(to: GMSCameraPosition(latitude: locValue.latitude, longitude: locValue.longitude, zoom: 30))
+        let marker: GMSMarker = GMSMarker() // Allocating Marker
+
+         marker.title = "Title" // Setting title
+         marker.snippet = "Sub title" // Setting sub title
+         marker.icon = UIImage(named: "") // Marker icon
+         marker.appearAnimation = .pop // Appearing animation. default
+        marker.position = map.camera.target // CLLocationCoordinate2D
+
+     //   DispatchQueue.main.async { // Setting marker on mapview in main thread.
+           marker.map = map // Setting marker on Mapview
+     //   }
+    }
+    
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        marker.map = map
+                    marker.position = CLLocationCoordinate2D(latitude: position.target.latitude, longitude: position.target.longitude)
     }
     
     func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
@@ -87,4 +106,13 @@ class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
         self.navigationController?.popViewController(animated: true)
 
     }
+    @IBAction func addLocation(_ sender: Any) {
+        print(marker.position)
+        self.navigationController?.popViewController(animated: true)
+        let imageDataDict = ["text": self.searchButton2.text]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName"), object: nil, userInfo: imageDataDict)
+
+
+    }
+
 }

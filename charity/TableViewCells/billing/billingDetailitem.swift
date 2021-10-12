@@ -16,12 +16,16 @@ class billingDetailitem: UITableViewCell {
     
     
     
+    @IBOutlet weak var locationName: UILabel!
+    
     @IBOutlet weak var editButton: UIButton!
     
     @IBOutlet weak var googleMaps: GMSMapView!
     
   
     @IBOutlet weak var creditButton: CheckBox!
+    
+    
         
     @IBOutlet weak var appleButton: CheckBox!
     

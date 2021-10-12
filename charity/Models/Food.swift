@@ -10,3 +10,11 @@ import Foundation
 
 struct food {
 }
+
+struct Constants {
+    struct Square {
+        static let APPLICATION_ID: String  = ""
+        static let CHARGE_SERVER: String = ""
+        static let CHARGE_URL: String = "\(CHARGE_SERVER)/chargeForCookie"
+    }
+}

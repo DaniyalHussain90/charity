@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FittedSheets
 class paymentSheetVC: UIViewController {
     var price:String? = ""
 

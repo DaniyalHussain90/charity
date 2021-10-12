@@ -125,7 +125,7 @@
         <!--Payment SheetVC-->
         <scene sceneID="eGa-c2-y6p">
             <objects>
-                <viewController id="9za-be-V7A" customClass="paymentSheetVC" customModule="charity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="paymentSheetVC" id="9za-be-V7A" customClass="paymentSheetVC" customModule="charity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LEQ-Eu-oCA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,7 +365,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtL-Cy-53M">
-                                <rect key="frame" x="8" y="48" width="34" height="22"/>
+                                <rect key="frame" x="27" y="52" width="34" height="22"/>
                                 <state key="normal" image="arrow"/>
                                 <connections>
                                     <action selector="back:" destination="n50-yn-fdO" eventType="touchUpInside" id="gCF-nB-xJL"/>
@@ -381,9 +381,9 @@
                             <constraint firstItem="Jiv-Ug-CkC" firstAttribute="trailing" secondItem="Kar-5t-dw6" secondAttribute="trailing" id="IVO-hF-bhy"/>
                             <constraint firstItem="wqZ-Lh-YEh" firstAttribute="leading" secondItem="Jiv-Ug-CkC" secondAttribute="leading" id="Pae-js-xt1"/>
                             <constraint firstItem="Jiv-Ug-CkC" firstAttribute="bottom" secondItem="Kar-5t-dw6" secondAttribute="bottom" id="Qar-I4-dp2"/>
-                            <constraint firstItem="YtL-Cy-53M" firstAttribute="leading" secondItem="Jiv-Ug-CkC" secondAttribute="leading" constant="8" id="YGb-Hn-DCi"/>
+                            <constraint firstItem="YtL-Cy-53M" firstAttribute="leading" secondItem="Jiv-Ug-CkC" secondAttribute="leading" constant="27" id="YGb-Hn-DCi"/>
                             <constraint firstItem="Kar-5t-dw6" firstAttribute="top" secondItem="wqZ-Lh-YEh" secondAttribute="bottom" id="c1d-PR-BZa"/>
-                            <constraint firstItem="YtL-Cy-53M" firstAttribute="top" secondItem="Jiv-Ug-CkC" secondAttribute="top" constant="4" id="qQ1-Ux-0fL"/>
+                            <constraint firstItem="YtL-Cy-53M" firstAttribute="top" secondItem="Jiv-Ug-CkC" secondAttribute="top" constant="8" id="qQ1-Ux-0fL"/>
                             <constraint firstItem="wqZ-Lh-YEh" firstAttribute="trailing" secondItem="Jiv-Ug-CkC" secondAttribute="trailing" id="wz4-LE-p4e"/>
                         </constraints>
                     </view>
@@ -428,6 +428,13 @@
                                     <action selector="bckButton1:" destination="7jQ-6A-Tmi" eventType="touchUpInside" id="Yl7-WG-jQ3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXv-ll-NUw">
+                                <rect key="frame" x="356" y="44" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addLocation:" destination="7jQ-6A-Tmi" eventType="touchUpInside" id="hkF-TW-uEc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sLD-ob-j6N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -444,7 +451,10 @@
                             <constraint firstItem="SbM-FN-fDJ" firstAttribute="top" secondItem="PaE-q3-FCK" secondAttribute="bottom" id="fDG-Pv-ixV"/>
                             <constraint firstItem="sLD-ob-j6N" firstAttribute="trailing" secondItem="SbM-FN-fDJ" secondAttribute="trailing" id="hJe-1k-3l5"/>
                             <constraint firstItem="PaE-q3-FCK" firstAttribute="top" secondItem="sLD-ob-j6N" secondAttribute="top" constant="19" id="j3p-HT-RIR"/>
+                            <constraint firstItem="sLD-ob-j6N" firstAttribute="trailing" secondItem="GXv-ll-NUw" secondAttribute="trailing" constant="28" id="kiF-tO-rIg"/>
                             <constraint firstItem="PaE-q3-FCK" firstAttribute="leading" secondItem="sLD-ob-j6N" secondAttribute="leading" id="kj6-3V-olD"/>
+                            <constraint firstItem="PaE-q3-FCK" firstAttribute="top" secondItem="GXv-ll-NUw" secondAttribute="bottom" constant="8" id="l33-Ow-kfC"/>
+                            <constraint firstItem="GXv-ll-NUw" firstAttribute="top" secondItem="fE4-Js-XVz" secondAttribute="top" constant="44" id="u57-Du-fj1"/>
                         </constraints>
                     </view>
                     <connections>
