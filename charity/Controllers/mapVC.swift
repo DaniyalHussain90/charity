@@ -77,7 +77,7 @@ class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue: CLLocationCoordinate2D = locationManager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
-        map.animate(to: GMSCameraPosition(latitude: locValue.latitude, longitude: locValue.longitude, zoom: 30))
+        map.animate(to: GMSCameraPosition(latitude: locValue.latitude, longitude: locValue.longitude, zoom: 50))
         let marker: GMSMarker = GMSMarker() // Allocating Marker
 
          marker.title = "Title" // Setting title
@@ -98,7 +98,7 @@ class mapVC: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
         if toLocation != nil {
-            map.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 10)
+            map.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 20)
         }
     }
 

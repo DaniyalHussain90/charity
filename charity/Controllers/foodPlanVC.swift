@@ -21,8 +21,8 @@ class foodPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
             tableView1.delegate = self
            tableView1.dataSource = self
            
-           let nibcell=UINib(nibName: "foodPlanTableItem", bundle: nil)
-           tableView1.register(nibcell, forCellReuseIdentifier: "foodPlanTableItem")
+           let nibcell=UINib(nibName: "foodPlanTableItem1", bundle: nil)
+           tableView1.register(nibcell, forCellReuseIdentifier: "foodPlanTableItem1")
 
     }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,7 +30,7 @@ class foodPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
          }
          
          func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                            let cell = tableView1.dequeueReusableCell(withIdentifier: "foodPlanTableItem",for: indexPath) as? foodPlanTableItem
+        let cell = tableView1.dequeueReusableCell(withIdentifier: "foodPlanTableItem1",for: indexPath) as? foodPlanTableItem1
             cell?.bookButton.addTarget(self, action: #selector(bookButton(sender:)), for: .touchUpInside)
             
 
@@ -39,9 +39,9 @@ class foodPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
             cell?.pressButton.addTarget(self, action: #selector(pressButton(sender:)), for: .touchUpInside)
             cell?.press2.addTarget(self, action: #selector(press2), for: .touchUpInside)
             cell?.bookButton.addTarget(self, action: #selector(bookButton), for: .touchUpInside)
-            cell?.ringBell.addTarget(self, action: #selector(ringBell), for: .touchUpInside)
+//            cell?.ringBell.addTarget(self, action: #selector(ringBell), for: .touchUpInside)
     cell?.arrowButton.addTarget(self, action: #selector(arrowButton), for: .touchUpInside)
-    cell?.arrowDown.addTarget(self, action: #selector(arrowDown), for: .touchUpInside)
+//    cell?.arrowDown.addTarget(self, action: #selector(arrowDown), for: .touchUpInside)
 
             
                              return cell!
@@ -92,6 +92,7 @@ class foodPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
 
     
+
 }
 
 

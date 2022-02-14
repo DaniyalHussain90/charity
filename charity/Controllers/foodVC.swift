@@ -49,6 +49,8 @@ class foodVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
         //        self.collectionV.register(nibcell ,forCellWithReuseIdentifier: "MealsCollectionItem")
         cell!.collectionV.delegate = cell
         cell!.collectionV.dataSource = cell
+        cell?.imgeButton.addTarget(self, action: #selector(imgeButton), for: .touchUpInside)
+
         return cell!
 
      }
@@ -64,6 +66,10 @@ class foodVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
                       
 
 }
+    @objc func imgeButton (sender: UIButton){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myvc = storyBoard.instantiateViewController(withIdentifier: "profileVC") as! profileVC
+        self.navigationController?.pushViewController(myvc, animated: true)
+    }
 
-    
 }

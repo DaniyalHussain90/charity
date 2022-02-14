@@ -29,7 +29,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.931549025388-da7vec78d24ccisejt2b5tfki7fb671f</string>
+				<string>com.googleusercontent.apps.552076777180-iafis0in7lcea3k6tri26aa2sfpo247g</string>
 			</array>
 		</dict>
 	</array>
@@ -41,8 +41,12 @@
 	<string>0738b674a4fdd91be9a37a9e4d9cbfd0</string>
 	<key>FacebookDisplayName</key>
 	<string>charity</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>we want to use location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -83,9 +87,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>we want to use location</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 </dict>
 </plist>

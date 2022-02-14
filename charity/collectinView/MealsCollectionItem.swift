@@ -9,7 +9,7 @@
 import UIKit
 
 class MealsCollectionItem: UICollectionViewCell {
-    let vc = foodVC()
+    let vc = foodVC2()
     var reviewAction : (() -> ())?
     @IBOutlet weak var mealsNumber: UILabel!
     var price1:String?
@@ -22,8 +22,10 @@ class MealsCollectionItem: UICollectionViewCell {
         price.text=price1
         // Initialization code
     }
-    
-    @IBAction func viedetailbtn(_ sender: Any) {
+    func bind(ad:Int){
+        
+    }
+    @IBAction func button(_ sender: Any) {
         reviewAction?()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let myvc = storyBoard.instantiateViewController(withIdentifier: "foodPlanVC") as! foodPlanVC

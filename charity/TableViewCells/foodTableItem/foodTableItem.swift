@@ -12,7 +12,7 @@ class foodTableItem: UITableViewCell, UICollectionViewDataSource, UICollectionVi
     @IBOutlet weak var collectionV: UICollectionView!
     @IBOutlet weak var arrowButton: UIButton!
     
-    @IBOutlet weak var imgeView: UIImageView!
+    @IBOutlet weak var imgeButton: UIButton!
     @IBOutlet weak var mealButton: UIButton!
     @IBOutlet weak var schedulsButton: UIButton!
     @IBOutlet weak var trackButton: UIButton!
@@ -58,12 +58,14 @@ class foodTableItem: UITableViewCell, UICollectionViewDataSource, UICollectionVi
         }
     
         @objc func nextVC(sender: UIButton){
-            if sender.tag == 1{
+            if sender.tag == 2{
                 UserDefaults.standard.set("$12", forKey: "price") //setObject
             }else{
                 UserDefaults.standard.set("$18", forKey: "price") //setObject
             }
             buttonAction?()
             
-           }
-    }
+               
+}
+    
+}

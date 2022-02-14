@@ -4,19 +4,33 @@
 //
 //  Created by Daniyal Hussain on 08/09/2021.
 //  Copyright © 2021 Daniyal Hussain. All rights reserved.
-//
 
 import UIKit
 import FittedSheets
-class paymentSheetVC: UIViewController {
+class paymentSheetVC: UIViewController, UITextFieldDelegate{
     var price:String? = ""
 
     @IBOutlet weak var priceButton3: UILabel!
+    
+    @IBOutlet weak var numP1: UITextField!
+    @IBOutlet weak var numPad2: UITextField!
+    @IBOutlet weak var numP3: UITextField!
+    @IBOutlet weak var numP4: UITextField!
+    
+    
+    
+    
+    
+    
     var buttonAction : (() -> ())?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.priceButton3.text =  UserDefaults.standard.string(forKey: "price")
+        numP1.delegate = self
+        numPad2.delegate = self
+        numP3.delegate = self
+        numP4.delegate = self
 
     }
 
@@ -39,9 +53,17 @@ class paymentSheetVC: UIViewController {
        }
 
     
-    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+                        
+        let maxLength = 3
+            let currentString: NSString = (textField.text ?? "") as NSString
+            let newString: NSString =
+                currentString.replacingCharacters(in: range, with: string) as NSString
+            return newString.length <= maxLength
+}
 
-    }
+
+
     /*
     // MARK: - Navigation
 
@@ -51,3 +73,5 @@ class paymentSheetVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
  }*/
+}
+

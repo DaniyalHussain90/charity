@@ -10,8 +10,10 @@
 		817297410BD6E99D2BC74625 /* Pods_charity_charityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B74759FA4F7E883568A7A /* Pods_charity_charityUITests.framework */; };
 		8A8F18BBDB349E361356E874 /* Pods_charityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE73F3C30363618ED7382B6 /* Pods_charityTests.framework */; };
 		8FEA36C3CCEC173ABD3E5887 /* Pods_charity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D5020AF0B569BD8E3387D0 /* Pods_charity.framework */; };
-		CC0B3B4426E7951500927738 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC0B3B4326E7951500927738 /* GoogleService-Info.plist */; };
 		CC1082C726F9E13C0090BB68 /* medicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1082C626F9E13C0090BB68 /* medicineVC.swift */; };
+		CC121F5D27340C15003789A5 /* foodTableItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC121F5B27340C15003789A5 /* foodTableItem2.swift */; };
+		CC121F5E27340C15003789A5 /* foodTableItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC121F5C27340C15003789A5 /* foodTableItem2.xib */; };
+		CC121F6027341CD9003789A5 /* foodVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC121F5F27341CD9003789A5 /* foodVC2.swift */; };
 		CC12EB0D26E76E2200A994C8 /* foodPlanTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */; };
 		CC12EB0E26E76E2200A994C8 /* foodPlanTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */; };
 		CC12EB1326E76FF100A994C8 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -30,10 +32,13 @@
 		CC26BF2226EF5EDC0001FF4D /* LoginItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */; };
 		CC26BF2426EF6F960001FF4D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26BF2326EF6F960001FF4D /* User.swift */; };
 		CC26BF2626EF6FB90001FF4D /* userManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC26BF2526EF6FB90001FF4D /* userManager.swift */; };
+		CC27C4D027183DEE008CDF4F /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC27C4CF27183DEE008CDF4F /* profileVC.swift */; };
 		CC2B1AC526D4FC780078ABC2 /* foodTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */; };
 		CC2B1AC726D4FCA80078ABC2 /* foodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC626D4FCA80078ABC2 /* foodVC.swift */; };
 		CC2B1ACA26D5132E0078ABC2 /* MealsCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC826D5132E0078ABC2 /* MealsCollectionItem.swift */; };
 		CC2B1ACB26D5132E0078ABC2 /* MealsCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2B1AC926D5132E0078ABC2 /* MealsCollectionItem.xib */; };
+		CC307F04271DAC8900D5F3EE /* setManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC307F03271DAC8900D5F3EE /* setManager.swift */; };
+		CC31403C272055480018ECAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC31403B272055480018ECAD /* GoogleService-Info.plist */; };
 		CC3443A426D3C21200686FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A326D3C21200686FA7 /* AppDelegate.swift */; };
 		CC3443A626D3C21200686FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A526D3C21200686FA7 /* SceneDelegate.swift */; };
 		CC3443A826D3C21200686FA7 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3443A726D3C21200686FA7 /* welcomeVC.swift */; };
@@ -59,6 +64,12 @@
 		CC79C4BE26F9E4A800C21FB6 /* medicineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */; };
 		CC79C4BF26F9E4A800C21FB6 /* medicineItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */; };
 		CC848A3526D6657200F00D72 /* foodTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */; };
+		CC91E96527BA7DB7008CABF1 /* medicineItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91E96327BA7DB7008CABF1 /* medicineItem1.swift */; };
+		CC91E96627BA7DB7008CABF1 /* medicineItem1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC91E96427BA7DB7008CABF1 /* medicineItem1.xib */; };
+		CC91E96927BA85E9008CABF1 /* foodPlanTableItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91E96727BA85E9008CABF1 /* foodPlanTableItem1.swift */; };
+		CC91E96A27BA85E9008CABF1 /* foodPlanTableItem1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC91E96827BA85E9008CABF1 /* foodPlanTableItem1.xib */; };
+		CCF8E8B92717019000582315 /* profieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8E8B72717019000582315 /* profieCell.swift */; };
+		CCF8E8BA2717019000582315 /* profieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF8E8B82717019000582315 /* profieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +112,10 @@
 		B81B74759FA4F7E883568A7A /* Pods_charity_charityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charity_charityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4708A1926CB119375309AA6 /* Pods-charityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charityTests.release.xcconfig"; path = "Target Support Files/Pods-charityTests/Pods-charityTests.release.xcconfig"; sourceTree = "<group>"; };
 		C768C0AD3B19EB8F3808E94B /* Pods-charity-charityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charity-charityUITests.release.xcconfig"; path = "Target Support Files/Pods-charity-charityUITests/Pods-charity-charityUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CC0B3B4326E7951500927738 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC1082C626F9E13C0090BB68 /* medicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineVC.swift; sourceTree = "<group>"; };
+		CC121F5B27340C15003789A5 /* foodTableItem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodTableItem2.swift; sourceTree = "<group>"; };
+		CC121F5C27340C15003789A5 /* foodTableItem2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodTableItem2.xib; sourceTree = "<group>"; };
+		CC121F5F27341CD9003789A5 /* foodVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodVC2.swift; sourceTree = "<group>"; };
 		CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = foodPlanTableItem.xib; sourceTree = "<group>"; };
 		CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodPlanTableItem.swift; sourceTree = "<group>"; };
 		CC15021426EA2CD2002BDDCB /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -120,11 +133,14 @@
 		CC26BF2026EF5EDC0001FF4D /* LoginItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginItem.xib; sourceTree = "<group>"; };
 		CC26BF2326EF6F960001FF4D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CC26BF2526EF6FB90001FF4D /* userManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userManager.swift; sourceTree = "<group>"; };
+		CC27C4CF27183DEE008CDF4F /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodTableItem.swift; sourceTree = "<group>"; };
 		CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodTableItem.xib; sourceTree = "<group>"; };
 		CC2B1AC626D4FCA80078ABC2 /* foodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodVC.swift; sourceTree = "<group>"; };
 		CC2B1AC826D5132E0078ABC2 /* MealsCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCollectionItem.swift; sourceTree = "<group>"; };
 		CC2B1AC926D5132E0078ABC2 /* MealsCollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealsCollectionItem.xib; sourceTree = "<group>"; };
+		CC307F03271DAC8900D5F3EE /* setManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setManager.swift; sourceTree = "<group>"; };
+		CC31403B272055480018ECAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC3443A026D3C21200686FA7 /* charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3443A326D3C21200686FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC3443A526D3C21200686FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +171,12 @@
 		CC71861D2701F25B004F0140 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineItem.swift; sourceTree = "<group>"; };
 		CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = medicineItem.xib; sourceTree = "<group>"; };
+		CC91E96327BA7DB7008CABF1 /* medicineItem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicineItem1.swift; sourceTree = "<group>"; };
+		CC91E96427BA7DB7008CABF1 /* medicineItem1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = medicineItem1.xib; sourceTree = "<group>"; };
+		CC91E96727BA85E9008CABF1 /* foodPlanTableItem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodPlanTableItem1.swift; sourceTree = "<group>"; };
+		CC91E96827BA85E9008CABF1 /* foodPlanTableItem1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodPlanTableItem1.xib; sourceTree = "<group>"; };
+		CCF8E8B72717019000582315 /* profieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profieCell.swift; sourceTree = "<group>"; };
+		CCF8E8B82717019000582315 /* profieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = profieCell.xib; sourceTree = "<group>"; };
 		F0D5020AF0B569BD8E3387D0 /* Pods_charity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +246,7 @@
 			children = (
 				CC26BF2526EF6FB90001FF4D /* userManager.swift */,
 				CC1567AD26F8B4EB001777C8 /* medicineManager.swift */,
+				CC307F03271DAC8900D5F3EE /* setManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -280,10 +303,10 @@
 				CC3443D826D3C37700686FA7 /* Controllers */,
 				CC3443D726D3C35200686FA7 /* TableViewCells */,
 				CC3443A526D3C21200686FA7 /* SceneDelegate.swift */,
-				CC0B3B4326E7951500927738 /* GoogleService-Info.plist */,
 				CC3443AC26D3C21800686FA7 /* Assets.xcassets */,
 				CC3443AE26D3C21800686FA7 /* LaunchScreen.storyboard */,
 				CC3443A326D3C21200686FA7 /* AppDelegate.swift */,
+				CC31403B272055480018ECAD /* GoogleService-Info.plist */,
 				CC7186192701CAE9004F0140 /* Info.plist */,
 			);
 			path = charity;
@@ -316,6 +339,8 @@
 				CC564E6026D91252003EF3F6 /* billing */,
 				CC50CDB026DCF4E400BB866A /* paynow */,
 				CC218BB626EB6C700004E090 /* login */,
+				CCF8E8B72717019000582315 /* profieCell.swift */,
+				CCF8E8B82717019000582315 /* profieCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -336,6 +361,8 @@
 				CC218BB726EB82CD0004E090 /* LoginVC.swift */,
 				CC1CB91826F4B51F00EDF909 /* priceVC.swift */,
 				CC1082C626F9E13C0090BB68 /* medicineVC.swift */,
+				CC27C4CF27183DEE008CDF4F /* profileVC.swift */,
+				CC121F5F27341CD9003789A5 /* foodVC2.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +381,8 @@
 			children = (
 				CC2B1AC226D4FC780078ABC2 /* foodTableItem.swift */,
 				CC2B1AC326D4FC780078ABC2 /* foodTableItem.xib */,
+				CC121F5B27340C15003789A5 /* foodTableItem2.swift */,
+				CC121F5C27340C15003789A5 /* foodTableItem2.xib */,
 			);
 			path = foodTableItem;
 			sourceTree = "<group>";
@@ -363,6 +392,8 @@
 			children = (
 				CC12EB0C26E76E2200A994C8 /* foodPlanTableItem.swift */,
 				CC12EB0B26E76E2200A994C8 /* foodPlanTableItem.xib */,
+				CC91E96727BA85E9008CABF1 /* foodPlanTableItem1.swift */,
+				CC91E96827BA85E9008CABF1 /* foodPlanTableItem1.xib */,
 			);
 			path = foodplan;
 			sourceTree = "<group>";
@@ -372,7 +403,6 @@
 			children = (
 				CC50CDAC26DCF4D700BB866A /* payTableItem.swift */,
 				CC50CDAD26DCF4D700BB866A /* payTableItem.xib */,
-				CC79C4C126F9E73100C21FB6 /* price */,
 				CC50CDB826DD0CB500BB866A /* thankYouitem */,
 			);
 			path = paynow;
@@ -392,6 +422,7 @@
 			children = (
 				CC564E5D26D911A7003EF3F6 /* billingDetailitem.xib */,
 				CC564E5C26D911A7003EF3F6 /* billingDetailitem.swift */,
+				CC79C4C126F9E73100C21FB6 /* price */,
 			);
 			path = billing;
 			sourceTree = "<group>";
@@ -401,6 +432,8 @@
 			children = (
 				CC79C4BC26F9E4A800C21FB6 /* medicineItem.swift */,
 				CC79C4BD26F9E4A800C21FB6 /* medicineItem.xib */,
+				CC91E96327BA7DB7008CABF1 /* medicineItem1.swift */,
+				CC91E96427BA7DB7008CABF1 /* medicineItem1.xib */,
 			);
 			path = medicine;
 			sourceTree = "<group>";
@@ -539,17 +572,21 @@
 				CC564E5F26D911A7003EF3F6 /* billingDetailitem.xib in Resources */,
 				CC3443D626D3C34300686FA7 /* welcomeTableItem.xib in Resources */,
 				CC12EB0D26E76E2200A994C8 /* foodPlanTableItem.xib in Resources */,
+				CC91E96627BA7DB7008CABF1 /* medicineItem1.xib in Resources */,
 				CC1CB91526F4AA3500EDF909 /* priceItem.xib in Resources */,
 				CC79C4BF26F9E4A800C21FB6 /* medicineItem.xib in Resources */,
 				CC3443B026D3C21800686FA7 /* LaunchScreen.storyboard in Resources */,
 				CC2B1AC526D4FC780078ABC2 /* foodTableItem.xib in Resources */,
 				CC16302326FB496E00E98E70 /* Auth.storyboard in Resources */,
+				CC91E96A27BA85E9008CABF1 /* foodPlanTableItem1.xib in Resources */,
+				CC31403C272055480018ECAD /* GoogleService-Info.plist in Resources */,
 				CC50CDB626DD0C7200BB866A /* thankYouitem.xib in Resources */,
 				CC50CDAF26DCF4D700BB866A /* payTableItem.xib in Resources */,
+				CCF8E8BA2717019000582315 /* profieCell.xib in Resources */,
 				CC71861E2701F25B004F0140 /* Main.storyboard in Resources */,
 				CC188E9B26E8E0B70035517B /* paymentSheetVC.xib in Resources */,
 				CC3443AD26D3C21800686FA7 /* Assets.xcassets in Resources */,
-				CC0B3B4426E7951500927738 /* GoogleService-Info.plist in Resources */,
+				CC121F5E27340C15003789A5 /* foodTableItem2.xib in Resources */,
 				CC2B1ACB26D5132E0078ABC2 /* MealsCollectionItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,10 +753,12 @@
 				CC2B1AC726D4FCA80078ABC2 /* foodVC.swift in Sources */,
 				CC3443D526D3C34300686FA7 /* welcomeTableItem.swift in Sources */,
 				CC3443A826D3C21200686FA7 /* welcomeVC.swift in Sources */,
+				CC121F6027341CD9003789A5 /* foodVC2.swift in Sources */,
 				CC3443A426D3C21200686FA7 /* AppDelegate.swift in Sources */,
 				CC34E14C2703231E008E2A37 /* mapVC.swift in Sources */,
 				CC50CDAA26DCF41300BB866A /* payNowVC.swift in Sources */,
 				CC15021526EA2CD2002BDDCB /* Food.swift in Sources */,
+				CC91E96927BA85E9008CABF1 /* foodPlanTableItem1.swift in Sources */,
 				CC1567AC26F8B413001777C8 /* Medicine.swift in Sources */,
 				CC848A3526D6657200F00D72 /* foodTableItem.swift in Sources */,
 				CC1567AE26F8B4EB001777C8 /* medicineManager.swift in Sources */,
@@ -731,10 +770,15 @@
 				CC1CB91926F4B51F00EDF909 /* priceVC.swift in Sources */,
 				CC3443A626D3C21200686FA7 /* SceneDelegate.swift in Sources */,
 				CC50CDB526DD0C7200BB866A /* thankYouitem.swift in Sources */,
+				CC91E96527BA7DB7008CABF1 /* medicineItem1.swift in Sources */,
+				CC307F04271DAC8900D5F3EE /* setManager.swift in Sources */,
+				CCF8E8B92717019000582315 /* profieCell.swift in Sources */,
+				CC27C4D027183DEE008CDF4F /* profileVC.swift in Sources */,
 				CC4832A526D79EBD007687B7 /* foodPlanVC.swift in Sources */,
 				CC218BB826EB82CD0004E090 /* LoginVC.swift in Sources */,
 				CC50CDAE26DCF4D700BB866A /* payTableItem.swift in Sources */,
 				CC12EB0E26E76E2200A994C8 /* foodPlanTableItem.swift in Sources */,
+				CC121F5D27340C15003789A5 /* foodTableItem2.swift in Sources */,
 				CC564E5E26D911A7003EF3F6 /* billingDetailitem.swift in Sources */,
 				CC79C4BE26F9E4A800C21FB6 /* medicineItem.swift in Sources */,
 				CC1082C726F9E13C0090BB68 /* medicineVC.swift in Sources */,
@@ -910,11 +954,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZ6288KFUT;
 				INFOPLIST_FILE = charity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rich.charity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -929,11 +974,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZ6288KFUT;
 				INFOPLIST_FILE = charity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.i.am.rich.charity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rich.charity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

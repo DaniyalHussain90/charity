@@ -132,7 +132,7 @@ class LoginVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ASA
                 // Start the sign in flow!
                 GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { [unowned self] user, error in
 
-                  if let error = error {
+                    if error != nil {
                     // ...
                     return
                   }
@@ -147,18 +147,25 @@ class LoginVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ASA
                   let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                                  accessToken: authentication.accessToken)
 
+                    
+                    userManager.shared.socialLogin(credential: credential, provider: "google") { success, error in
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let myvc = storyBoard.instantiateViewController(withIdentifier: "welcomeVC") as! welcomeVC
+                        self.navigationController?.pushViewController(myvc, animated: true)
+                         print("SuccessFully logged in with our user: ", user ?? "")
+                    }
                     Auth.auth().signIn(with: credential) { authResult, error in
                         if let error = error {
                           let authError = error as NSError
 //                          if isMFAEnabled, authError.code == AuthErrorCode.secondFactorRequired.rawValue {
                             // The user is a multi-factor user. Second factor challenge is required.
-                            let resolver = authError
-                              .userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
-                            var displayNameString = ""
-                            for tmpFactorInfo in resolver.hints {
-                              displayNameString += tmpFactorInfo.displayName ?? ""
-                              displayNameString += " "
-                            }
+//                            let resolver = authError
+//                              .userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
+//                            var displayNameString = ""
+//                            for tmpFactorInfo in resolver.hints {
+//                              displayNameString += tmpFactorInfo.displayName ?? ""
+//                              displayNameString += " "
+//                            }
 //
                           } else {
 //                            self.showMessagePrompt(error.localizedDescription)
@@ -167,10 +174,7 @@ class LoginVC: UIViewController, UITableViewDelegate, UITableViewDataSource, ASA
                           // ...
                           return
                         }
-                        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let myvc = storyBoard.instantiateViewController(withIdentifier: "welcomeVC") as! welcomeVC
-                        self.navigationController?.pushViewController(myvc, animated: true)
-                         print("SuccessFully logged in with our user: ", user ?? "")
+                     
 
                         // User is signed in
                         // ...

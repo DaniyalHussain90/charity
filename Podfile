@@ -21,7 +21,8 @@ target 'charity' do
   pod 'PaginatedTableView'
  pod 'PaginationController'
   pod "SquareInAppPaymentsSDK"
-
+# pod 'Realtime'
+ pod 'Firebase/Database'
 
 
  

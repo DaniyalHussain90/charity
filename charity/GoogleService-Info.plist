@@ -3,34 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>931549025388-da7vec78d24ccisejt2b5tfki7fb671f.apps.googleusercontent.com</string>
+	<string>552076777180-iafis0in7lcea3k6tri26aa2sfpo247g.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.931549025388-da7vec78d24ccisejt2b5tfki7fb671f</string>
-	<key></key>
-	<string></string>
+	<string>com.googleusercontent.apps.552076777180-iafis0in7lcea3k6tri26aa2sfpo247g</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBkiZIqGsI4i8eI6yCLTfHS8yq0EUW1GXY</string>
+	<string>AIzaSyAzzssfHG41z2ZwJjEhZvLug6JgQe0Uf30</string>
 	<key>GCM_SENDER_ID</key>
-	<string>931549025388</string>
+	<string>552076777180</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.i.am.rich.charity</string>
+	<string>com.rich.charity</string>
 	<key>PROJECT_ID</key>
-	<string>charity-198cc</string>
+	<string>charity-2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>charity-198cc.appspot.com</string>
+	<string>charity-2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:931549025388:ios:f8c9049e147fe068c9f449</string>
+	<string>1:552076777180:ios:0a6c1c6850f8409fcc4619</string>
 </dict>
 </plist>

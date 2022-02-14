@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,19 +13,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KGk-i7-Jjw" customClass="medicineItem" customModule="charity" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" translatesAutoresizingMaskIntoConstraints="NO" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
-                <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" restorationIdentifier="medicineItem" translatesAutoresizingMaskIntoConstraints="NO" id="LGk-WL-wpo" customClass="medicineItem" customModule="charity" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicine Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFA-Rq-9js">
-                                <rect key="frame" x="124" y="76" width="163.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1o-OV-dsO">
                                 <rect key="frame" x="269" y="81" width="124.5" height="21.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,31 +27,49 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medicine-1" translatesAutoresizingMaskIntoConstraints="NO" id="R4c-Wh-ILv">
-                                <rect key="frame" x="4" y="48" width="100" height="70"/>
+                                <rect key="frame" x="0.0" y="32" width="100" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6HG-aa-y9F"/>
-                                    <constraint firstAttribute="height" constant="70" id="rY9-Of-W4w"/>
+                                    <constraint firstAttribute="width" constant="100" id="21H-Nh-U1v"/>
+                                    <constraint firstAttribute="height" constant="70" id="UAu-Kf-Kdf"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicine Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFA-Rq-9js">
+                                <rect key="frame" x="120" y="59" width="163.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yFA-Rq-9js" firstAttribute="leading" secondItem="R4c-Wh-ILv" secondAttribute="trailing" constant="20" id="5FS-qe-L2P"/>
-                            <constraint firstItem="R4c-Wh-ILv" firstAttribute="top" secondItem="LGk-WL-wpo" secondAttribute="top" constant="48" id="ASu-t3-37J"/>
-                            <constraint firstItem="yFA-Rq-9js" firstAttribute="top" secondItem="LGk-WL-wpo" secondAttribute="top" constant="76" id="IJp-qQ-1bC"/>
-                            <constraint firstAttribute="bottom" secondItem="R4c-Wh-ILv" secondAttribute="bottom" constant="26" id="Yuu-YD-zX4"/>
-                            <constraint firstItem="R4c-Wh-ILv" firstAttribute="leading" secondItem="LGk-WL-wpo" secondAttribute="leading" constant="4" id="vkU-Dn-Dgx"/>
+                            <constraint firstItem="R4c-Wh-ILv" firstAttribute="leading" secondItem="LGk-WL-wpo" secondAttribute="leading" id="HWJ-2n-wvp"/>
+                            <constraint firstItem="yFA-Rq-9js" firstAttribute="leading" secondItem="R4c-Wh-ILv" secondAttribute="trailing" constant="20" id="Wky-aR-KQE"/>
+                            <constraint firstAttribute="trailing" secondItem="yFA-Rq-9js" secondAttribute="trailing" constant="130.5" id="ZOx-kb-yEf"/>
+                            <constraint firstAttribute="bottom" secondItem="R4c-Wh-ILv" secondAttribute="bottom" constant="42" id="asn-Jb-VMQ"/>
+                            <constraint firstItem="R4c-Wh-ILv" firstAttribute="top" secondItem="LGk-WL-wpo" secondAttribute="top" constant="32" id="cHj-wX-Evw"/>
+                            <constraint firstAttribute="bottom" secondItem="yFA-Rq-9js" secondAttribute="bottom" constant="58.5" id="h19-qg-GCx"/>
+                            <constraint firstItem="yFA-Rq-9js" firstAttribute="top" secondItem="LGk-WL-wpo" secondAttribute="top" constant="59" id="xtF-HD-yaT"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LGk-WL-wpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KZP-3R-ccO"/>
-                    <constraint firstItem="LGk-WL-wpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WDJ-2R-Gze"/>
-                    <constraint firstAttribute="trailing" secondItem="LGk-WL-wpo" secondAttribute="trailing" id="b4c-gg-5hy"/>
-                    <constraint firstAttribute="bottom" secondItem="LGk-WL-wpo" secondAttribute="bottom" id="hNQ-vd-NoL"/>
+                    <constraint firstItem="LGk-WL-wpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4OT-C8-uCk"/>
+                    <constraint firstItem="LGk-WL-wpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GBj-N2-gbj"/>
+                    <constraint firstItem="LGk-WL-wpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Oxz-qZ-BEm"/>
+                    <constraint firstAttribute="bottom" secondItem="LGk-WL-wpo" secondAttribute="bottom" id="nIE-JB-fqt"/>
+                    <constraint firstAttribute="bottom" secondItem="LGk-WL-wpo" secondAttribute="bottom" id="ok7-Us-9Sd"/>
+                    <constraint firstAttribute="trailing" secondItem="LGk-WL-wpo" secondAttribute="trailing" id="pel-Lf-aQA"/>
+                    <constraint firstAttribute="trailing" secondItem="LGk-WL-wpo" secondAttribute="trailing" id="tzo-c4-HBw"/>
+                    <constraint firstItem="LGk-WL-wpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wkF-Ht-X6I"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="H2p-sc-9uM" firstAttribute="trailing" secondItem="njF-e1-oar" secondAttribute="trailing" id="0gO-s2-Wiu"/>
+                <constraint firstItem="H2p-sc-9uM" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="2QA-wX-0WM"/>
+                <constraint firstItem="H2p-sc-9uM" firstAttribute="bottom" secondItem="njF-e1-oar" secondAttribute="bottom" id="ciB-qx-m6M"/>
+                <constraint firstItem="H2p-sc-9uM" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="r2d-oP-ASo"/>
+            </constraints>
             <connections>
                 <outlet property="name1" destination="yFA-Rq-9js" id="XVF-U8-JSq"/>
                 <outlet property="name2" destination="s1o-OV-dsO" id="aCM-Xr-ski"/>

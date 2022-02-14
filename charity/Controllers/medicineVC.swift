@@ -33,8 +33,8 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView7.delegate = self
        
         
-        let nibcell=UINib(nibName: "medicineItem", bundle: nil)
-        tableView7.register(nibcell, forCellReuseIdentifier: "medicineItem")
+        let nibcell=UINib(nibName: "medicineItem1", bundle: nil)
+        tableView7.register(nibcell, forCellReuseIdentifier: "medicineItem1")
         data(limit: 10)
 
     }
@@ -53,7 +53,7 @@ class medicineVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "medicineItem",for: indexPath) as? medicineItem
+        let cell = tableView.dequeueReusableCell(withIdentifier: "medicineItem1",for: indexPath) as? medicineItem1
         cell?.name1.text = arr[indexPath.row]
 //        cell?.name2.text = arr2[indexPath.row]
       return cell!

@@ -13,7 +13,7 @@ import FBSDKCoreKit
 import IQKeyboardManagerSwift
 import SquareInAppPaymentsSDK
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+    class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 

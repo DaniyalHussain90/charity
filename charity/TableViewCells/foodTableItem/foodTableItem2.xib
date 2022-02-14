@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="foodTableItem2" selectionStyle="default" indentationWidth="10" rowHeight="307" id="KGk-i7-Jjw" customClass="foodTableItem2" customModule="charity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BM0-4g-X2k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpF-IH-824">
+                                <rect key="frame" x="0.0" y="6" width="32" height="34"/>
+                                <color key="tintColor" white="0.92956002329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BS-7i-MtJ">
+                                <rect key="frame" x="30" y="11" width="37.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.92956002329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-g9-2gP">
+                                <rect key="frame" x="348" y="0.0" width="66" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="round img"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your plan and enjoy a warm lunch or dinner at your home." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQa-VG-IbF">
+                                <rect key="frame" x="8" y="56" width="389" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.92956002329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="themeBlue"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BQa-VG-IbF" secondAttribute="trailing" constant="17" id="5kB-wF-7Bh"/>
+                            <constraint firstItem="BQa-VG-IbF" firstAttribute="leading" secondItem="BM0-4g-X2k" secondAttribute="leading" constant="8" id="5xN-x2-88U"/>
+                            <constraint firstItem="YpF-IH-824" firstAttribute="leading" secondItem="BM0-4g-X2k" secondAttribute="leading" id="Bug-nE-g9V"/>
+                            <constraint firstItem="2BS-7i-MtJ" firstAttribute="leading" secondItem="YpF-IH-824" secondAttribute="trailing" constant="-2" id="F97-c7-pob"/>
+                            <constraint firstItem="WgN-g9-2gP" firstAttribute="top" secondItem="BM0-4g-X2k" secondAttribute="top" id="KLK-BE-lnG"/>
+                            <constraint firstAttribute="height" constant="148" id="LeV-WL-5R6"/>
+                            <constraint firstAttribute="bottom" secondItem="BQa-VG-IbF" secondAttribute="bottom" constant="56" id="Lgi-Ue-k6G"/>
+                            <constraint firstItem="2BS-7i-MtJ" firstAttribute="top" secondItem="BM0-4g-X2k" secondAttribute="top" constant="11" id="XfM-CC-62J"/>
+                            <constraint firstItem="YpF-IH-824" firstAttribute="top" secondItem="BM0-4g-X2k" secondAttribute="top" constant="6" id="q3r-4K-iIA"/>
+                            <constraint firstAttribute="trailing" secondItem="WgN-g9-2gP" secondAttribute="trailing" id="t8S-Jj-PuL"/>
+                            <constraint firstItem="BQa-VG-IbF" firstAttribute="top" secondItem="YpF-IH-824" secondAttribute="bottom" constant="16" id="uOn-U7-ugW"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="P8w-v8-Egr">
+                        <rect key="frame" x="0.0" y="148" width="414" height="230"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="qRE-tp-yT6"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="83T-RH-WwX">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Features" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAv-dp-6Nz">
+                        <rect key="frame" x="20" y="396" width="133" height="26.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" name="themeBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="JGS-89-pHa">
+                        <rect key="frame" x="13" y="442" width="388" height="329"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-Cg-eqz">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT1-9T-95R">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="159"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Repeat Grid 1-1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0c-Bb-PvI">
+                                        <rect key="frame" x="0.0" y="170" width="178" height="159"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Repeat Grid 2-1" title=""/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="aVL-fe-gFF">
+                                <rect key="frame" x="219" y="0.0" width="169" height="329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-m5-bL3">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="159"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Repeat Grid 3-1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-Uu-FTj">
+                                        <rect key="frame" x="0.0" y="170" width="169" height="159"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Repeat Grid 4"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="aVL-fe-gFF" firstAttribute="leading" secondItem="JGS-89-pHa" secondAttribute="leading" constant="219" id="wNY-vQ-YYJ"/>
+                            <constraint firstAttribute="height" constant="329" id="x7u-lR-YiU"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="P8w-v8-Egr" secondAttribute="trailing" id="14x-XS-d09"/>
+                    <constraint firstItem="BM0-4g-X2k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="15Q-Jh-RVc"/>
+                    <constraint firstItem="JGS-89-pHa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="9d1-Hh-A18"/>
+                    <constraint firstItem="P8w-v8-Egr" firstAttribute="top" secondItem="BM0-4g-X2k" secondAttribute="bottom" id="AJM-h3-wld"/>
+                    <constraint firstItem="P8w-v8-Egr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DpO-0o-ygQ"/>
+                    <constraint firstItem="rAv-dp-6Nz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="RQk-1n-5BR"/>
+                    <constraint firstAttribute="bottom" secondItem="JGS-89-pHa" secondAttribute="bottom" constant="47" id="UQz-Nv-rl1"/>
+                    <constraint firstAttribute="trailing" secondItem="JGS-89-pHa" secondAttribute="trailing" constant="13" id="XQ5-yl-4Ye"/>
+                    <constraint firstItem="BM0-4g-X2k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cic-b5-A5Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rAv-dp-6Nz" secondAttribute="trailing" constant="241" id="lFh-vL-Ryf"/>
+                    <constraint firstItem="rAv-dp-6Nz" firstAttribute="top" secondItem="P8w-v8-Egr" secondAttribute="bottom" constant="18" id="ns0-7o-sD7"/>
+                    <constraint firstAttribute="trailing" secondItem="BM0-4g-X2k" secondAttribute="trailing" id="tAl-aQ-duk"/>
+                    <constraint firstItem="JGS-89-pHa" firstAttribute="top" secondItem="rAv-dp-6Nz" secondAttribute="bottom" constant="19.5" id="vB8-F3-cB8"/>
+                    <constraint firstItem="rAv-dp-6Nz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wuv-NI-4E5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backButton" destination="YpF-IH-824" id="gBZ-NI-C2d"/>
+                <outlet property="button1" destination="bT1-9T-95R" id="464-4L-I0t"/>
+                <outlet property="button2" destination="Xhg-m5-bL3" id="OH6-Fq-mHn"/>
+                <outlet property="button3" destination="S0c-Bb-PvI" id="K60-1U-5y4"/>
+                <outlet property="button4" destination="dPl-Uu-FTj" id="Gho-Cq-UOJ"/>
+                <outlet property="collectionView" destination="P8w-v8-Egr" id="yw2-gS-ySr"/>
+                <outlet property="imageButton" destination="WgN-g9-2gP" id="gLf-L8-R6L"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Repeat Grid 1-1" width="145" height="145"/>
+        <image name="Repeat Grid 2-1" width="145" height="145"/>
+        <image name="Repeat Grid 3-1" width="145" height="145"/>
+        <image name="Repeat Grid 4" width="145" height="145"/>
+        <image name="arrow" width="8" height="16"/>
+        <image name="round img" width="42" height="42"/>
+        <namedColor name="themeBlue">
+            <color red="0.075000002980232239" green="0.10599999874830246" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

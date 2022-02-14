@@ -41,7 +41,7 @@ class welcomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
        
     @objc func foodButton(sender: UIButton){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let myvc = storyBoard.instantiateViewController(withIdentifier: "foodVC") as! foodVC
+        let myvc = storyBoard.instantiateViewController(withIdentifier: "foodVC2") as! foodVC2
         self.navigationController?.pushViewController(myvc, animated: true)
     }
     

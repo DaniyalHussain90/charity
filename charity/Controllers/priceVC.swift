@@ -44,15 +44,15 @@ class priceVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SQI
          return cell!
     }
     @objc func donateButton (sender: UIButton){
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let myvc = storyBoard.instantiateViewController(withIdentifier: "detailVC") as! detailVC
-//        self.navigationController?.pushViewController(myvc, animated: true)
-        let theme = SQIPTheme()
-        theme.tintColor = .green
-        
-        let cardEntry = SQIPCardEntryViewController(theme: theme)
-        cardEntry.delegate = self
-        navigationController?.pushViewController( cardEntry, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myvc = storyBoard.instantiateViewController(withIdentifier: "detailVC") as! detailVC
+        self.navigationController?.pushViewController(myvc, animated: true)
+//        let theme = SQIPTheme()
+//        theme.tintColor = .green
+//
+//        let cardEntry = SQIPCardEntryViewController(theme: theme)
+//        cardEntry.delegate = self
+//        navigationController?.pushViewController( cardEntry, animated: true)
 
     }
      

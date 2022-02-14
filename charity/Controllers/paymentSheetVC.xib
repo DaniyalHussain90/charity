@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="paymentSheetVC" customModule="charity" customModuleProvider="target">
             <connections>
+                <outlet property="numP1" destination="LZn-nL-USJ" id="5Gg-K9-5ki"/>
+                <outlet property="numP3" destination="EEN-6Z-Snn" id="dns-Hg-iqr"/>
+                <outlet property="numP4" destination="Uow-HH-bpK" id="Jd3-Y2-wBN"/>
+                <outlet property="numPad2" destination="8mH-r1-ACf" id="JEr-Oy-Jnz"/>
                 <outlet property="priceButton3" destination="arc-P7-Jw6" id="nmV-yk-lib"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
