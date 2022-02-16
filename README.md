@@ -1,5 +1,5 @@
 # Use Case:
- 1 - This App is based on charity to give to needy people. 
+ 1 - This App is based on charity to give needy people support. 
  
  2 - In this App people can buy medicine through Apple pay.
  
@@ -12,20 +12,20 @@
 
 3. Apple Login.
 
-
-
 # Back End:
 1. Rest Api.
 
 2. Alamofire.
 
-3. Google Login Api.
+3. Google Map Api.
 
 4. Firebase.
 
-5. Facebook login Api.
+5. Payment Method. 
 
-6. Google Map.
+
+
+
 
 
 
