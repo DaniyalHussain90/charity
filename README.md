@@ -1,3 +1,9 @@
+# Screenshot:
+
+
+
+
+
 # Use Case:
  1 - This App is based on charity to give needy people support. 
  
@@ -25,6 +31,41 @@
 
 
 
+# 3rd party Libraries:
+
+  pod "Koyomi"
+  
+  pod 'GoogleMaps', '5.1.0'
+  
+  pod 'Firebase/Analytics', '7.2-M1'
+  
+  pod 'FirebaseFirestore'
+  
+  pod 'FittedSheets'
+  
+  pod 'Firebase/Auth'
+  
+  pod 'FBSDKLoginKit'
+  
+  pod 'GoogleSignIn'
+  
+  pod 'IQKeyboardManagerSwift'
+  
+  pod 'Toast-Swift', '~> 5.0.1'
+  
+  pod 'Alamofire', '~> 5.2'
+  
+  pod 'MBProgressHUD'
+  
+  pod 'PaginatedTableView'
+  
+  pod 'PaginationController'
+  
+  pod "SquareInAppPaymentsSDK"
+
+  pod 'Realtime'
+  
+  pod 'Firebase/Database'
 
 
 
