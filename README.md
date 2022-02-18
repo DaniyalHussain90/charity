@@ -22,11 +22,11 @@ Home         |  Food       | Buy Food                      | Donate             
 3. Apple Login.
 
 # Back End:
-1. Rest Api.
+1. Rest APIs.
 
 2. Alamofire.
 
-3. Google Map Api.
+3. Google Map APIs.
 
 4. Firebase.
 
